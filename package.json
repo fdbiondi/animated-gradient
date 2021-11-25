@@ -1,0 +1,34 @@
+{
+  "name": "anim-gradient",
+  "version": "1.0.0",
+  "description": "Tilted gradient effect",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fdbiondi/animated-gradient.git"
+  },
+  "exports": "./src/index.js",
+  "files": [
+    "src",
+    "*.md"
+  ],
+  "type": "module",
+  "author": "Federico Biondi <fdbion@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint **/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "prettier": "^2.5.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": " >=14.13.1 || >=16.0.0"
+  }
+}
