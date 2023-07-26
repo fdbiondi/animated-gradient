@@ -5,24 +5,31 @@
 [npm][]:
 
 ```sh
-npm install anim-gradient
+npm install --save-dev anim-gradient
 ```
 
 [yarn][]:
 
 ```sh
-npm install anim-gradient
+yarn add anim-gradient --dev
+```
+
+[pnpm][]:
+
+```sh
+pnpm add -D anim-gradient
 ```
 
 ## How to use
 
 - set this on your `index.html` file
 ```html
-<canvas id="gradient-canvas" width="800" height="600"></canvas>
+<canvas id="canvas" width="800" height="600"></canvas>
 ```
+
 - set this on your `main.css` file
 ```css
-#gradient-canvas {
+#canvas {
     --gradient-color-1: #6ec3f4;
     --gradient-color-2: #3a3aff;
     --gradient-color-3: #ff61ab;
@@ -35,17 +42,30 @@ npm install anim-gradient
 import { Gradient } from 'anim-gradient';
 
 const gradient = new Gradient()
-gradient.initGradient('#gradient-canvas');
+gradient.initGradient('#canvas');
 ```
+
+### Solidjs setup
+
+### Svelte setup
+
+### Astro setup
+
+### Vue setup
+
+### React setup
+
+### Next.js setup
+
+### Nuxt 2/3 setup
 
 - set this on `nuxt.config.js`
 ```js
   build: {
-    transpile: [
-      'anim-gradient'
-    ]
+    transpile: ['anim-gradient']
   }
 ```
+
 ## Inspiration
 
 Based on the tilted gradient effect on Stripe's website. Functionality found in [`Kevin Hufnagl`][kevin's-web] website.
